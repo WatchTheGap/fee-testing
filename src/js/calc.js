@@ -14,10 +14,18 @@
         if (!numbers) {
             return total;
         }
+        if (!Array.isArray(numbers)) {
+          return NaN;
+        }
+        if (numbers.length === 0) {
+          return total;
+        }
 
         numbers.forEach(function addThem(num) {
-            total += num;
+
+          total += num;
         });
+
         return total;
 
     };

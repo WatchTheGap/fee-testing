@@ -16,6 +16,18 @@
           let result = window.calc.sum();
           expect(result).to.equal(0);
         });
+        it('should handle an argument that is not an array', function () {
+          let result = window.calc.sum('1');
+          expect(result).to.be.NaN;
+        });
+        it('should handle an empty array', function () {
+          let result = window.calc.sum([]);
+          expect(result).to.equal(0);
+        });
+        // it('should handle an array that contains values that are not numbers', function () {
+        //   let result = window.be.sum(['a', 'b']);
+        //   expect(result).to.equal('ab');
+        // });
       });
 
     });
