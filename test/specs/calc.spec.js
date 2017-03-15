@@ -32,6 +32,12 @@
 
     });
 
+    describe('factorial tests', function () {
+      it('should return the factorial of the given number', function () {
+        let result = window.calc.factorial(1);
+        expect(result).to.be.a('number');
+      });
+    });
 
 
 })();
