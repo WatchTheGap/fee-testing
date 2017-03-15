@@ -1,0 +1,30 @@
+{
+  "name": "fee-testing",
+  "version": "1.0.0",
+  "description": "week 5 day 2 homework. writing and running tests.",
+  "main": "calc.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start calc.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WatchTheGap/fee-testing.git"
+  },
+  "author": "Sara Basile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WatchTheGap/fee-testing/issues"
+  },
+  "homepage": "https://github.com/WatchTheGap/fee-testing#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^1.5.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^3.2.0"
+  }
+}

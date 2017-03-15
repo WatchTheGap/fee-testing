@@ -8,7 +8,7 @@
      * @param  {Array} numbers  The numbers to add together
      * @return {Number}         The total of all numbers
      */
-    window.calc.sum = function sum(numbers) {
+    window.calc.sum = function sum(numbers = []) {
         let total = 0;
 
         if (!numbers) {
@@ -18,6 +18,7 @@
         numbers.forEach(function addThem(num) {
             total += num;
         });
+        return total;
 
     };
 

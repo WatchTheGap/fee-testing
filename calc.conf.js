@@ -1,11 +1,11 @@
-module.exports = karmaConfig(config) {
+module.exports = function karmaConfig(config) {
   config.set( {
     frameworks: ['mocha', 'chai'],
     browsers: ['Chrome'],
     singleRun: true,
     files: [
       'src/**/*.js',
-      'tests/specs/**/*.js'
+      'test/specs/**/*.js'
     ]
   });
-}
+};
