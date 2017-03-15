@@ -37,6 +37,11 @@
         let result = window.calc.factorial(1);
         expect(result).to.be.a('number');
       });
+      it('should handle no arguments', function () {
+        let result = window.calc.factorial();
+        expect(result).to.equal(0);
+
+      });
     });
 
 
