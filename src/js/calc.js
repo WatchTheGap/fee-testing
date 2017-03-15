@@ -43,7 +43,7 @@
         let total = 0;
 
         if (typeof(topNumber) !== 'number') {
-            return 0;
+            return NaN;
         }
 
         for (let i = 1; i <= topNumber; i++) {

@@ -39,8 +39,11 @@
       });
       it('should handle no arguments', function () {
         let result = window.calc.factorial();
-        expect(result).to.equal(0);
-
+        expect(result).to.be.NaN;
+      });
+      it('should handle an argument that is not a number', function () {
+        let result = window.calc.factorial('a');
+        expect(result).to.be.NaN;
       });
     });
 
